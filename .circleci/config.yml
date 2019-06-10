@@ -67,7 +67,7 @@ jobs:
                   }
                 }
             EOF
-      - run: terraform init
+      - run: echo terraform init
       - run:
           name: terraform plan
           command: echo terraform plan -var-file=<< parameters.tfvarsfile >> -out=mybuild
