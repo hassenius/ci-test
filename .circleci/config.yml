@@ -13,6 +13,7 @@ jobs:
       - tfstatedir: circledeployments
       - tfstateregion: us-east-2
     steps:
+      - run: echo This shouldt run really
       - checkout
       - run:
           name: Relevant env vars
