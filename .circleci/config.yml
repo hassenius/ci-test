@@ -54,6 +54,7 @@ jobs:
             echo "CIRCLE_USERNAME $CIRCLE_USERNAME"
             echo "CIRCLE_COMPARE_URL $CIRCLE_COMPARE_URL"
             echo "CIRCLE_BUILD_URL $CIRCLE_BUILD_URL"
+            echo "CIRCLE_PR_USERNAME $CIRCLE_PR_USERNAME"
             export
       - run:
           name: Make backend for << parameters.tfvarsfile >>
