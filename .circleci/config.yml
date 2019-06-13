@@ -42,7 +42,7 @@ jobs:
       - tfstatedir: circledeployments
       - tfstateregion: us-east-2
     steps:
-      - early_return_for_forked_pull_requests
+      # - early_return_for_forked_pull_requests
       - checkout
       - run:
           name: Relevant env vars
