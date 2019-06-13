@@ -89,4 +89,8 @@ workflows:
           requires:
             - build
           tfvarsfile: terraform-icp-ce-example.tfvars
+      - build:
+          requires:
+            - build
+          tfvarsfile: terraform-icp-ce-example.tfvars
       # Repeated as many times as there are configurations...
