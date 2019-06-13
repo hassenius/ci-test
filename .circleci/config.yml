@@ -84,13 +84,16 @@ workflows:
   workflow:
     jobs:
       - build:
+          name: b1
           tfvarsfile: terraform-icp-ce-example.tfvars
       - build:
+          name: b2
           requires:
-            - build
+            - b1
           tfvarsfile: terraform-icp-ce-example.tfvars
       - build:
+          name: b3
           requires:
-            - build
+            - b2
           tfvarsfile: terraform-icp-ce-example.tfvars
       # Repeated as many times as there are configurations...
