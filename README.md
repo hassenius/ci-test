@@ -1,2 +1,2 @@
 # ci-test
-Test ci approaches
+Test ci approaches ∞...
